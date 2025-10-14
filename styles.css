@@ -64,10 +64,17 @@ h2 {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+    width: 30%;
 }
 
 .image-box, .text-box, .circle-image {
@@ -88,15 +95,6 @@ h2 {
     height: 150px;
 }
 
-.text-box {
-    width: 46%;
-    height: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .circle-image {
     width: 100px;
     height: 100px;
@@ -104,6 +102,16 @@ h2 {
     background: #fff;
     border: 2px solid #ccc;
     margin-bottom: 10px;
+}
+
+.text-box {
+    background: #333;
+    color: #fff;
+    padding: 30px;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    min-height: 150px;
 }
 
 footer {

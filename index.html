@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <h1>Xbox Controller Help</h1>
-        <nav>
+        <nav role="navigation" aria-label="Main Navigation">
             <a href="#home">Home</a>
             <a href="#guides">User Guides</a>
             <a href="#faqs">FAQs</a>
@@ -18,65 +18,71 @@
         </nav>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
+    <main role="main">
+        <section id="home" aria-labelledby="home-heading">
+            <h2 id="home-heading">Home</h2>
             <div class="row">
-                <div class="image-box">Image</div>
+                <div class="image-box" role="img" aria-label="Placeholder image for Home">Image</div>
                 <div class="text-box">Text</div>
             </div>
         </section>
 
-        <section id="guides">
-            <h2>User Guides</h2>
+        <section id="guides" aria-labelledby="guides-heading">
+            <h2 id="guides-heading">User Guides</h2>
             <div class="row">
-                <div class="image-box">Image</div>
-                <div class="image-box">Image</div>
-            </div>
-        </section>
-
-        <section id="faqs">
-            <h2>FAQs</h2>
-            <div class="row">
+                <div class="image-box" role="img" aria-label="Placeholder image for User Guides">Image</div>
                 <div class="text-box">Text</div>
-                <div class="image-box">Image</div>
             </div>
             <div class="row">
-                <div class="image-box">Image</div>
+                <div class="image-box" role="img" aria-label="Placeholder image for User Guides">Image</div>
                 <div class="text-box">Text</div>
             </div>
         </section>
 
-        <section id="troubleshooting">
-            <h2>Troubleshooting</h2>
+        <section id="faqs" aria-labelledby="faqs-heading">
+            <h2 id="faqs-heading">FAQs</h2>
             <div class="row">
-                <div class="circle-image">Image</div>
                 <div class="text-box">Text</div>
+                <div class="image-box" role="img" aria-label="Placeholder image for FAQs">Image</div>
             </div>
             <div class="row">
-                <div class="circle-image">Image</div>
+                <div class="image-box" role="img" aria-label="Placeholder image for FAQs">Image</div>
                 <div class="text-box">Text</div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Info</h2>
+        <section id="troubleshooting" aria-labelledby="troubleshooting-heading">
+            <h2 id="troubleshooting-heading">Troubleshooting</h2>
             <div class="row">
-                <div class="circle-image">Image</div>
+                <div class="circle-image" role="img" aria-label="Placeholder circular image for Troubleshooting">Image</div>
                 <div class="text-box">Text</div>
             </div>
             <div class="row">
-                <div class="circle-image">Image</div>
+                <div class="circle-image" role="img" aria-label="Placeholder circular image for Troubleshooting">Image</div>
                 <div class="text-box">Text</div>
             </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Info</h2>
             <div class="row">
-                <div class="circle-image">Image</div>
-                <div class="text-box">Text</div>
+                <div class="contact-item">
+                    <div class="circle-image" role="img" aria-label="Placeholder circular image for Contact">Image</div>
+                    <div class="text-box">Text</div>
+                </div>
+                <div class="contact-item">
+                    <div class="circle-image" role="img" aria-label="Placeholder circular image for Contact">Image</div>
+                    <div class="text-box">Text</div>
+                </div>
+                <div class="contact-item">
+                    <div class="circle-image" role="img" aria-label="Placeholder circular image for Contact">Image</div>
+                    <div class="text-box">Text</div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2025 Xbox Controller</p>
     </footer>
 </body>

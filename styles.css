@@ -133,3 +133,8 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+#faq, #trouble {
+	justify-content: left;
+	text-align: left;
+}

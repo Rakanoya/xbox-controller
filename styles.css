@@ -103,10 +103,10 @@ h2 {
 }
 
 .image-box {
-    width: 100%;
-    max-width: 400px;
     height: 150px;
+    width: 200px;
 }
+
 
 .circle-image {
     width: 100px;

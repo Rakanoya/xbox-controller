@@ -37,6 +37,10 @@ nav {
     z-index: 999;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     margin: 0; /* Remove any default margin */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
@@ -137,4 +141,71 @@ footer {
 #faq, #trouble {
 	justify-content: left;
 	text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    nav {
+        flex-direction: row; /* Keep navbar horizontal */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.3rem 1rem; /* Adjust padding for horizontal layout */
+    }
+
+    main {
+        padding: 1rem;
+        margin-top: 160px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box, .text-box {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .circle-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        font-size: 0.7rem; /* Further reduce font size for very small screens */
+        padding: 0.3rem; /* Minimize padding */
+    }
+
+    nav a {
+        padding: 0.2rem 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .text-box {
+        padding: 20px;
+    }
+
+    .circle-image {
+        width: 70px;
+        height: 70px;
+    }
 }
